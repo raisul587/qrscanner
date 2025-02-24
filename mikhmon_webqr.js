@@ -494,7 +494,6 @@ function setwebcam2(_0xbc1325) {
     _0x3c74a9[myqr_0x391a('0x7f', 'OHzv')](setTimeout, captureToCanvas, 0x1f4);
   }
 }
-
 function setimg() {
   var _0x3888df = {
     'aNrpZ': myqr_0x391a('0x42', 'leuS'),
