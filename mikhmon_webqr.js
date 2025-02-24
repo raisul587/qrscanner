@@ -448,42 +448,50 @@ function setwebcam() {
   }
 }
 function setwebcam2(_0xbc1325) {
-  console.log(_0xbc1325);
-  if (stype > 1) {
-    document.getElementById('v').innerHTML = vidhtml;
-    v = document.getElementById('v');
-    // <-- Add these lines:
-    if (v) {
-      v.setAttribute('playsinline', 'true');
-      v.setAttribute('muted', 'true');
-      v.autoplay = true;
+  var _0x3c74a9 = {
+    'TqqDw': function (_0x38b5cb, _0x30ea0a) {
+      return _0x38b5cb(_0x30ea0a);
+    },
+    'eVWYp': function (_0x34400a, _0x38fc12) {
+      return _0x34400a(_0x38fc12);
+    },
+    'gVmZR': function (_0x1f18a4, _0x869ed0) {
+      return _0x1f18a4 != _0x869ed0;
+    },
+    'VRKGP': function (_0x2523fe, _0xf8f9b8, _0x45e32c) {
+      return _0x2523fe(_0xf8f9b8, _0x45e32c);
     }
-    if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
-      navigator.mediaDevices.getUserMedia({
-        video: _0xbc1325,
-        audio: false
-      }).then(function (stream) {
-        success(stream);
-      }).catch(function (err) {
-        error(err);
+  };
+  console[myqr_0x391a('0xcb', 'k[Ev')](_0xbc1325);
+  if (_0x3c74a9[myqr_0x391a('0x96', 'tGrR')](0x1, stype)) {
+    document[myqr_0x391a('0xd', 'f#DN')](myqr_0x391a('0xab', 'a!G)'))[myqr_0x391a('0x61', '&e5h')] = vidhtml;
+    v = document[myqr_0x391a('0x1', 'VRZe')]('v');
+    if (navigator[myqr_0x391a('0xb3', 'k[Ev')][myqr_0x391a('0x82', '5nwE')]) {
+      navigator[myqr_0x391a('0xa1', 'Y[bw')][myqr_0x391a('0x7c', 'Vafy')]({
+        'video': _0xbc1325,
+        'audio': false
+      })[myqr_0x391a('0x6f', 'a[8P')](function (_0x5f1134) {
+        _0x3c74a9[myqr_0x391a('0xb7', ')]UL')](success, _0x5f1134);
+      })[myqr_0x391a('0x8e', 'Bw%e')](function (_0x101821) {
+        _0x3c74a9[myqr_0x391a('0x32', 'Y[bw')](_0x101821, _0x101821);
       });
-    } else if (navigator.getUserMedia) {
+    } else if (navigator[myqr_0x391a('0x9b', 'fyPw')]) {
       webkit = true;
-      navigator.getUserMedia({
-        video: _0xbc1325,
-        audio: false
+      navigator[myqr_0x391a('0xe', '3TVE')]({
+        'video': _0xbc1325,
+        'audio': false
       }, success, error);
-    } else if (navigator.webkitGetUserMedia) {
+    } else if (navigator[myqr_0x391a('0x22', 'Vafy')]) {
       webkit = true;
       navigator.webkitGetUserMedia({
-        video: _0xbc1325,
-        audio: false
+        'video': _0xbc1325,
+        'audio': false
       }, success, error);
     }
-    stype = 1;
-    setTimeout(captureToCanvas, 500);
+    stype = 0x1;
+    _0x3c74a9[myqr_0x391a('0x80', 'R7ay')](setTimeout, captureToCanvas, 0x1f4);
   } else {
-    setTimeout(captureToCanvas, 500);
+    _0x3c74a9[myqr_0x391a('0x7f', 'OHzv')](setTimeout, captureToCanvas, 0x1f4);
   }
 }
 
